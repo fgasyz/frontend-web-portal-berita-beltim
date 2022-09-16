@@ -1,0 +1,122 @@
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background: linear-gradient(#FF6600, #990000)
+}
+
+.hamburger {
+    border: none;
+    background: none;
+}
+
+.navbar-container {
+    background-color: #990000; 
+    top: 28px; right: 0px;  
+    width: 70%;
+}
+
+.nav-item:hover {
+    background-color: #FF6600;
+    transition: background-color, 2s;
+}
+
+.nav-text-color {
+    color: #fff;
+}
+
+.input-search {
+    border: none;
+    border-radius: 50px;
+    padding: 5px 15px;
+    outline: none;
+}
+
+.btn-search {
+    margin-left: -40px;
+    border: none;
+    background-color: #fff;
+}
+
+.news-indicator {
+    border: 2px solid #FF6600 !important;
+    background: #FF6600 !important;
+}
+
+.prev {
+    transform: rotate(-180deg);
+}
+
+.prev, .next {
+    width: 50px;
+}
+
+.link-element, .link-element:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+.date {
+    font-style: italic;
+    color: #FF6600;
+}
+
+.carousel-img-effect {
+    opacity: 0.8;
+    transition: opacity 2s;
+}
+
+.carousel-img-effect:hover {
+    opacity: 1;
+}
+
+.text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-link {
+    text-decoration: none;
+    color: #fff;
+    background-color: #990000;
+    padding: 5px;
+}
+
+.card-link:hover {
+    color: #Fff;
+}
+
+.swiper {
+    height: 400px;
+}
+
+.swiper-pagination {
+    margin-top: 20px;
+}
+
+@media (min-width: 992px) {
+
+    .hamburger {
+        display: none;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .navbar-container {
+        background-color: #990000; 
+        top: 68.5px; 
+        right: 0;  
+        width: 70%;
+        padding: 0 25px;
+        transition: all 1s;
+    }
+
+    .form-active {
+        margin-bottom: 15px;
+    }
+
+}

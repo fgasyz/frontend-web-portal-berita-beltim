@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portal Berita Beltim</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css">
+  </head>
+  <body>
+    <header class="container-fluid fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand d-flex" href="#">
+                <img src="./public/beltim-negative_template.png" alt="Bootstrap" width="90" height="90">
+                <div class="container" style="margin-left: -20px; margin-top: 15px" >
+                  <h6 class="text-white">PEMERINTAH KABUPATEN</h6>
+                  <h6 class="text-white">BELITUNG TIMUR</h6>
+                  </div>
+              </a>
+              <button class="hamburger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span>
+                  <img src="./public/icons/hamburger.svg" alt="">
+                </span>
+              </button>
+                <div class="collapse navbar-collapse mt-5 justify-content-between position-fixed navbar-container" id="navbarSupportedContent">
+                  <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link text-white" aria-current="page" href="#main-news">Berita Utama</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#">Pengumuman</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Opd
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="nav-item dropdown-item" href="#">Informasi Opd</a></li>
+                        <li><a class="nav-item dropdown-item" href="#">Berita Opd</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#">Begalor</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-white" href="#">Artikel</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex form-active" style="margin-right: 45px;" role="search">
+                    <input class="me-2 input-search" type="search" placeholder="Cari" aria-label="Search">
+                    <button class="btn-search" style="border-radius: 50px;"  type="submit">
+                      <img src="./public/icons/search.svg" style="margin-top: -5px;" alt="Bootstrap" width="30" height="20">
+                    </button>
+                  </form>
+                </div>
+            </div>
+          </nav>
+    </header>
+
+    <section id="main-news">
+      <div class="container-fluid">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="news-indicator active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" class="news-indicator" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="news-indicator" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active position-relative">
+              <img src="./public/news-images/p1.jpg" class="d-inline-block carousel-img-effect" style="width: 100%; height: 500px; object-fit: cover;" alt="...">
+              <div class="carousel-caption d-none d-md-block mb-5">
+                <a href="#" target="_blank" class="link-element">
+                  <h4 class="text-start">nisl nisi scelerisque eu ultrices vitae auctor eu 
+                    augue ut lectus arcu bibendum at varius</h4>
+                    <h6 class="text-start date">- 16 September 2022</h6>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./public/news-images/p2.jpg" class="d-block carousel-img-effect" style="width: 100%; height: 500px; object-fit: cover;" alt="...">
+              <div class="carousel-caption d-none d-md-block mb-5">
+                <a href="#" target="_blank" class="link-element">
+                  <h4 class="text-start">nisl nisi scelerisque eu ultrices vitae auctor eu 
+                    augue ut lectus arcu bibendum at varius</h4>
+                    <h6 class="text-start date">- 16 September 2022</h6>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./public/news-images/p3.jpg" class="d-block carousel-img-effect" style="width: 100%; height: 500px; object-fit: cover;" alt="...">
+              <div class="carousel-caption d-none d-md-block mb-5">
+                <a href="#" target="_blank" class="link-element">
+                  <h4 class="text-start">nisl nisi scelerisque eu ultrices vitae auctor eu 
+                    augue ut lectus arcu bibendum at varius</h4>
+                    <h6 class="text-start date">- 16 September 2022</h6>
+                </a>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" style="margin-top: 100px" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span aria-hidden="true">
+              <img class="prev" src="./public/icons/less-than.svg"alt="">
+            </span>
+            <span class="visually-hidden"></span>
+          </button>
+          <button class="carousel-control-next" type="button" style="margin-top: 100px" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span aria-hidden="true">
+              <img class="next" src="./public/icons/less-than.svg"alt="">
+            </span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+          <div class="d-flex flex-wrap justify-content-center align-items-center my-2 swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card border-0 item" style="width: 18rem;">
+                  <img src="./public/news-images/p1.jpg" class="card-img-top card-img" width="150px" height="150px" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted" style="color: #D4D925 !important;">Card subtitle</h6>
+                    <p class="card-text text-ellipsis" >Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="d-flex justify-content-between">
+                      <a href="#" class="card-link">Lihat Detail</a>
+                      <p class="card-text">16/9/2022</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card border-0 item" style="width: 18rem;">
+                  <img src="./public/news-images/p2.jpg" class="card-img-top card-img" width="150px" height="150px" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted" style="color: #D4D925 !important;">Card subtitle</h6>
+                    <p class="card-text text-ellipsis">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="d-flex justify-content-between">
+                      <a href="#" class="card-link">Lihat Detail</a>
+                      <p class="card-text">16/9/2022</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card border-0 item" style="width: 18rem;">
+                  <img src="./public/news-images/p3.jpg" class="card-img-top card-img" width="150px" height="150px" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted" style="color: #D4D925 !important;">Card subtitle</h6>
+                    <p class="card-text text-ellipsis">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="d-flex justify-content-between">
+                      <a href="#" class="card-link">Lihat Detail</a>
+                      <p class="card-text">16/9/2022</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card border-0 item" style="width: 18rem;">
+                  <img src="./public/news-images/p4.jpg" class="card-img-top card-img" width="150px" height="150px" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted" style="color: #D4D925 !important;">Card subtitle</h6>
+                    <p class="card-text text-ellipsis">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="d-flex justify-content-between">
+                      <a href="#" class="card-link">Lihat Detail</a>
+                      <p class="card-text">16/9/2022</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">      
+                <div class="card border-0 item" style="width: 18rem;">
+                  <img src="./public/news-images/p5.jpg" class="card-img-top card-img" width="150px" height="150px" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted" style="color: #D4D925 !important;">Card subtitle</h6>
+                    <p class="card-text text-ellipsis">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="d-flex justify-content-between">
+                      <a href="#" class="card-link">Lihat Detail</a>
+                      <p class="card-text">16/9/2022</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card border-0 item" style="width: 18rem;">
+                  <img src="./public/news-images/p4.jpg" class="card-img-top card-img" width="150px" height="150px" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted" style="color: #D4D925 !important;">Card subtitle</h6>
+                    <p class="card-text text-ellipsis">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="d-flex justify-content-between">
+                      <a href="#" class="card-link">Lihat Detail</a>
+                      <p class="card-text">16/9/2022</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card border-0 item" style="width: 18rem;">
+                  <img src="./public/news-images/p4.jpg" class="card-img-top card-img" width="150px" height="150px" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted" style="color: #D4D925 !important;">Card subtitle</h6>
+                    <p class="card-text text-ellipsis">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="d-flex justify-content-between">
+                      <a href="#" class="card-link">Lihat Detail</a>
+                      <p class="card-text">16/9/2022</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card  border-0 item" style="width: 18rem;">
+                  <img src="./public/news-images/p4.jpg" class="card-img-top card-img" width="150px" height="150px" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted" style="color: #D4D925 !important;">Card subtitle</h6>
+                    <p class="card-text text-ellipsis">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="d-flex justify-content-between">
+                      <a href="#" class="card-link">Lihat Detail</a>
+                      <p class="card-text">16/9/2022</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card  border-0 item" style="width: 18rem;">
+                  <img src="./public/news-images/p4.jpg" class="card-img-top card-img" width="150px" height="150px" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted" style="color: #D4D925 !important;">Card subtitle</h6>
+                    <p class="card-text text-ellipsis">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="d-flex justify-content-between">
+                      <a href="#" class="card-link">Lihat Detail</a>
+                      <p class="card-text">16/9/2022</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+    </section>
+    <section id="announcement"></section>
+    <section id="opd-info"></section>
+    <section id="artikel"></section>
+    <section id="news-from-opd"></section>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/dom.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
