@@ -1,13 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
-    makeCarouselCard(".mySwiper");
-    makeCarouselCard(".artikelSwiper");
+    makeCarouselMainNewsCard();
+    makeCarouselMainNewsCard();
+    makeCarouselArticleCard();
     makeNewsCardEffect();
     makeAnnouncementEffect();
     makeBegalorEffect();
     makeOpdInformationEffect();
-    makeTextEllipsisForMainNews();
+    makeTextEllipsisForMainNewsHeader();
+    makeTextEllipsisForMainNewsBody();
     makeTextEllipsisForOpdNews();
     makeTextEllipsisForAnnouncement();
+    makeTextEllipsisForOpdInfo();
+    makeTextEllipsisForArticleHeader();
+    makeTextEllipsisForArticleBody();
     makeScroolTopButton();
     backtoTopFunction();
 })

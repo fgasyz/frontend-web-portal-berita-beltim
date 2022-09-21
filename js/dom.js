@@ -1,5 +1,5 @@
-function makeCarouselCard(swiperName) {
-  var swiper = new Swiper(swiperName, {
+function makeCarouselMainNewsCard() {
+  var swiper = new Swiper(".mySwiper", {
     slidesPerView: 2,
     spaceBetween: 10,
     autoplay: {
@@ -11,31 +11,92 @@ function makeCarouselCard(swiperName) {
       el: ".swiper-pagination",
       clickable: true,
     },
-    breakpoints: {
+    breakpoints: {      
+      487: {
+        slidesPerView: 1,
+        spaceBetween: -70,
+      },
       575: {
-        slidesPerView: 2,
+        slidesPerView: 1,
+        spaceBetween: -135,
       },
       640: {
-        slidesPerView: 3,
-        spaceBetween: 10,
+        slidesPerView: 2,
+        spaceBetween: 100,
       },
       768: {
-        slidesPerView: 4,
-        spaceBetween: 20,
+        slidesPerView: 3,
+        spaceBetween: 290,
+      },
+      960: {
+        slidesPerView: 3,
+        spaceBetween: 180,
       },
       1024: {
-        slidesPerView: 4,
-        spaceBetween: 50,
+        slidesPerView: 3,
+        spaceBetween: 180,
       },
       1250: {
+        slidesPerView: 4,
+        spaceBetween: 200,
+      },
+      1805: {
         slidesPerView: 5,
-        spaceBetween: 80,
-      }
+      },
     },
   });
   return swiper;
 }
 
+function makeCarouselArticleCard() {
+  var swiper = new Swiper(".artikelSwiper", {
+    slidesPerView: 2,
+    spaceBetween: 10,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: true,
+    },
+    freeMode: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {      
+      487: {
+        slidesPerView: 1,
+        spaceBetween: -70,
+      },
+      575: {
+        slidesPerView: 1,
+        spaceBetween: -135,
+      },
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 100,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 300,
+      },
+      960: {
+        slidesPerView: 3,
+        spaceBetween: 0,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 0,
+      },
+      1250: {
+        slidesPerView: 4,
+        spaceBetween: 0,
+      },
+      1805: {
+        slidesPerView: 5,
+      },
+    },
+  });
+  return swiper;
+}
 function makeNewsCardEffect() {
   const newscards = document.getElementsByClassName('opd-web-effect');
   for(let i= 0; i<newscards.length; i++) {
@@ -62,7 +123,7 @@ function makeBegalorEffect() {
   const begalorcards = document.getElementsByClassName('begalor-effect');
   for(let i= 0; i<begalorcards.length; i++) {
     window.addEventListener('scroll', () => {
-      if(window.scrollY > (window.innerHeight / 2 * 4)) {
+      if(window.scrollY > (window.innerHeight / 2 * 3)) {
         begalorcards[i].classList.add('begalor-effect-active');
       }
     })
@@ -73,16 +134,26 @@ function makeOpdInformationEffect() {
   const opdInformationcards = document.getElementsByClassName('opd-information-effect');
   for(let i= 0; i<opdInformationcards.length; i++) {
     window.addEventListener('scroll', () => {
-      if(window.scrollY > (window.innerHeight / 2 * 6)) {
+      if(window.scrollY > (window.innerHeight / 2 * 5)) {
         opdInformationcards[i].classList.add('opd-information-effect-active');
       }
     })
   }
 }
 
-function makeTextEllipsisForMainNews() {
-  var $textContent = $('.text-ellipsis-main-news p');
-  var textContainer = $('.text-ellipsis-main-news').height();
+function makeTextEllipsisForMainNewsHeader() {
+  var $textContent = $('.text-ellipsis-main-news-header h6');
+  var textContainer = $('.text-ellipsis-main-news-header').height();
+  while ($textContent.outerHeight() > textContainer) {
+      $textContent.text(function (index, text) {
+          return text.replace(/\W*\s(\S)*$/, '...');
+      });
+  }
+}
+
+function makeTextEllipsisForMainNewsBody() {
+  var $textContent = $('.text-ellipsis-main-news-body p');
+  var textContainer = $('.text-ellipsis-main-news-body').height();
   while ($textContent.outerHeight() > textContainer) {
       $textContent.text(function (index, text) {
           return text.replace(/\W*\s(\S)*$/, '...');
@@ -110,9 +181,29 @@ function makeTextEllipsisForAnnouncement() {
   }
 }
 
-function makeTextEllipsisForAnnouncement() {
+function makeTextEllipsisForOpdInfo() {
   var $textContent = $('.text-ellipsis-info-opd p');
   var textContainer = $('.text-ellipsis-info-opd').height();
+  while ($textContent.outerHeight() > textContainer) {
+      $textContent.text(function (index, text) {
+          return text.replace(/\W*\s(\S)*$/, '...');
+      });
+  }
+}
+
+function makeTextEllipsisForArticleHeader() {
+  var $textContent = $('.text-ellipsis-article-header h6');
+  var textContainer = $('.text-ellipsis-article-header').height();
+  while ($textContent.outerHeight() > textContainer) {
+      $textContent.text(function (index, text) {
+          return text.replace(/\W*\s(\S)*$/, '...');
+      });
+  }
+}
+
+function makeTextEllipsisForArticleBody() {
+  var $textContent = $('.text-ellipsis-article-body p');
+  var textContainer = $('.text-ellipsis-article-body').height();
   while ($textContent.outerHeight() > textContainer) {
       $textContent.text(function (index, text) {
           return text.replace(/\W*\s(\S)*$/, '...');

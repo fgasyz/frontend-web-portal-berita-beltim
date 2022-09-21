@@ -3,7 +3,7 @@ html {
 }
 
 header {
-    background: linear-gradient(#FF6600, #990000)
+    background: linear-gradient(#FF6600, #990000);
 }
 
 .hamburger {
@@ -39,6 +39,13 @@ header {
     background-color: #fff;
 }
 
+/* use for contain some of section */
+
+.contain {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .news-indicator {
     border: 2px solid #FF6600 !important;
     background: #FF6600 !important;
@@ -62,6 +69,10 @@ header {
     color: #FF6600;
 }
 
+.main-news-card {
+    width: 18rem;
+}
+
 .carousel-img-effect {
     opacity: 0.8;
     transition: opacity 2s;
@@ -71,8 +82,13 @@ header {
     opacity: 1;
 }
 
-.text-ellipsis-main-news {
-    height: 70px;
+.text-ellipsis-main-news-header {
+    height: 75px;
+    overflow: hidden;
+}
+
+.text-ellipsis-main-news-body {
+    height: 75px;
     overflow: hidden;
 }
 
@@ -91,10 +107,15 @@ header {
     overflow: hidden;
 }
 
-.card-img {
-    object-fit:fill;
+.text-ellipsis-article-header {
+    height: 90px;
+    overflow: hidden;
 }
 
+.text-ellipsis-article-body {
+    height: 90px;
+    overflow: hidden;
+}
 .card-link {
     text-decoration: none;
     color: #fff;
@@ -108,11 +129,13 @@ header {
 }
 
 .mySwiper {
-    height: 380px;
+    height: 450px;
+    margin-bottom: 200px;
 }
 
 .artikelSwiper {
-    height: 150px;
+    height: 300px;
+    margin-bottom: 50px;
 }
 
 .swiper-pagination {
@@ -142,8 +165,8 @@ header {
 
 .opd-web-effect {
     position: relative;
-    left: -100%;
-    transition: all 2s ease-in-out;
+    left: -120%;
+    transition: all 1s ease-in-out;
 }
 
 .opd-web-effect-active {
@@ -152,7 +175,7 @@ header {
 
 .announcement-effect {
     opacity: 0;
-    transition: all 3s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 .announcement-effect-active {
@@ -214,13 +237,17 @@ header {
     color: #FF6600;
 }
 
+.container-footer-logo {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
 footer {
     background: linear-gradient(#FF6600, #990000);
 }
 
 .footer-link {
     text-decoration: none;
-    color: #000;
 }
 
 #scroll-top {
@@ -259,7 +286,10 @@ footer {
 
  }
 
-@media (max-width: 767.98px) { }
+@media (max-width: 767.98px) {
+
+
+ }
 
 @media (max-width: 991.98px) {
 
