@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
     makeCarouselMainNewsCard();
-    makeCarouselMainNewsCard();
     makeCarouselArticleCard();
     makeNewsCardEffect();
     makeAnnouncementEffect();
