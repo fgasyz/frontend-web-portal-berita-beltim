@@ -6,6 +6,12 @@ header {
     background: linear-gradient(#FF6600, #990000);
 }
 
+.jumbotron-container {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .hamburger {
     border: none;
     background: none;
@@ -180,6 +186,19 @@ header {
 
 .announcement-effect-active {
     opacity: 1;
+}
+
+.content-link {
+    color: #000;
+    text-decoration: none;
+}
+
+.content-link:hover {
+    color: #000;
+}
+
+.content-link:active {
+    color: #FF6600
 }
 
 .begalor-effect {
