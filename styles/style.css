@@ -3,7 +3,7 @@ html {
 }
 
 header {
-    background: linear-gradient(#FF6600, #990000);
+    background-color: #20ABCC;
 }
 
 .jumbotron-container {
@@ -18,13 +18,13 @@ header {
 }
 
 .navbar-container {
-    background-color: #990000; 
+    background-color: #353398; 
     top: 28px; right: 0px;  
     width: 70%;
 }
 
 .nav-item:hover {
-    background-color: #FF6600;
+    background-color: #77B5FF;
     transition: background-color, 2s;
 }
 
@@ -53,8 +53,8 @@ header {
 }
 
 .news-indicator {
-    border: 2px solid #FF6600 !important;
-    background: #FF6600 !important;
+    border: 2px solid #353398 !important;
+    background: #353398 !important;
 }
 
 .prev {
@@ -72,7 +72,6 @@ header {
 
 .date {
     font-style: italic;
-    color: #FF6600;
 }
 
 .main-news-card {
@@ -122,16 +121,26 @@ header {
     height: 90px;
     overflow: hidden;
 }
+
+.card-header {
+    color: #fff;
+    background-color: #20ABCC;
+}
+
 .card-link {
     text-decoration: none;
     color: #fff;
-    background-color: #990000;
+    background-color: #20ABCC;
     height: fit-content;
     padding: 3px;
 }
 
 .card-link:hover {
     color: #Fff;
+}
+
+.card-subtitle {
+    color: #77B5FF!important;
 }
 
 .mySwiper {
@@ -149,7 +158,7 @@ header {
 }
 
 .swiper-pagination-bullet {
-    background-color: #FF6600;
+    background-color: #353398;
 }
 
 .show-contents {
@@ -158,7 +167,7 @@ header {
 }
 
 .show-contents p {
-    background-color: #fa8131;
+    background-color: #353398;
     border-radius: 25px;
     padding: 2px 10px;
     color: #fff;
@@ -166,7 +175,7 @@ header {
 }
 
 .show-contents p:hover {
-    background-color: #FF6600;
+    background-color: #77B5FF;
 }
 
 .opd-web-effect {
@@ -253,7 +262,7 @@ header {
 
 .date-overlay {
     font-size: 13px;
-    color: #FF6600;
+    color: #77B5FF;
 }
 
 .container-footer-logo {
@@ -262,7 +271,7 @@ header {
 }
 
 footer {
-    background: linear-gradient(#FF6600, #990000);
+    background-color: #353398;
 }
 
 .footer-link {
@@ -305,11 +314,6 @@ footer {
 
  }
 
-@media (max-width: 767.98px) {
-
-
- }
-
 @media (max-width: 991.98px) {
 
     .navbar-container {
@@ -325,7 +329,3 @@ footer {
         margin-bottom: 15px;
     }
 }
-
-@media (max-width: 1199.98px) { }
-
-@media (max-width: 1399.98px) { }
