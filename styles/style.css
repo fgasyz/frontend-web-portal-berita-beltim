@@ -75,7 +75,7 @@ header {
 }
 
 .main-news-card {
-    width: 18rem;
+    width: 15rem;
 }
 
 .carousel-img-effect {
@@ -317,7 +317,7 @@ footer {
 @media (max-width: 991.98px) {
 
     .navbar-container {
-        background-color: #990000; 
+        background-color: #353398; 
         top: 68.5px; 
         right: 0;  
         width: 70%;

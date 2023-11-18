@@ -51,7 +51,7 @@ function makeCarouselMainNewsCard() {
 function makeCarouselArticleCard() {
   var swiper = new Swiper(".artikelSwiper", {
     slidesPerView: 2,
-    spaceBetween: 10,
+    spaceBetween: 100,
     autoplay: {
       delay: 2000,
       disableOnInteraction: true,
@@ -60,39 +60,6 @@ function makeCarouselArticleCard() {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
-    },
-    breakpoints: {      
-      487: {
-        slidesPerView: 1,
-        spaceBetween: -70,
-      },
-      575: {
-        slidesPerView: 1,
-        spaceBetween: -135,
-      },
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 100,
-      },
-      768: {
-        slidesPerView: 3,
-        spaceBetween: 300,
-      },
-      960: {
-        slidesPerView: 3,
-        spaceBetween: 0,
-      },
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 0,
-      },
-      1250: {
-        slidesPerView: 4,
-        spaceBetween: 0,
-      },
-      1805: {
-        slidesPerView: 5,
-      },
     },
   });
   return swiper;
